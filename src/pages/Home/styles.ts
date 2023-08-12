@@ -1,9 +1,12 @@
 import styled from "styled-components"
 
 export const Section=styled.section`
- position: fixed;
-    width: 43.583rem;
-    height: 8.188rem;
-    top: 12rem;
-    margin-left: 55rem;
+  display: flex;
+  max-width: 1090px;
+  margin: 100px auto;
+  justify-content: center;
+ 
+  img {
+    width: 35%;
+  }
 `

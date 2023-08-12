@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -11,10 +11,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 export const colors = {
-    primary: "#F38686",
-    secundary: "#F5C89B",
-    secundarylight: "#F5E8D3",
-    third:  "#FC8A3B",
+    primary: "#FFC7C9",
+    secundary: "#F5E8D3",
+    third: "#DD6E7E",
     black: "#000",
     white:"#FFF"
 }
+
+export const Main = styled.main`
+  min-height: calc(100vh - 9rem);
+`
