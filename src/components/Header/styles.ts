@@ -4,11 +4,12 @@ import { colors } from "../../styles/GlobalStyle"
 export const Header = styled.header`
 
   /* Cabeçalho */
-  border-bottom: 0.4rem solid ${colors.black};
+  background-color: ${colors.secundary};
+  border-bottom: none;
   display: flex;
-  height: 6rem;
+  height: 4rem;
   picture {
-    margin-left: 0.5rem;
+    margin-left: 0%.5;
     padding: 0.5rem;
     img {
       height: 100%;

@@ -7,7 +7,11 @@ import React from 'react'
 export function Home() {
   return (
     <>
-      <img src={TituloPrincipal} alt="titulo billie eilish" />
+    <S.Titulo>
+    <aside>
+    <img src={TituloPrincipal} alt="titulo billie eilish" />
+    </aside>
+    </S.Titulo>
       <S.Section>
         <img src={BillieBarbie1} alt="foto billie eilish" />
         <img src={BillieBarbie2} alt="foto billie eilish" />
