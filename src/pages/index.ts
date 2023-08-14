@@ -1,2 +1,3 @@
 export {Home as PageHome} from "./Home"
-//export {Galeria as PageGaleria} from "./Galeria"
+export { Galeria as PageDois } from "./Galeria"
+export { Layout as PageLayout } from "./Layout"

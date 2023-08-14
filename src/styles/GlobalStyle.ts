@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle, styled } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Itim', sans-serif;
     font-weight: 500;
   }
+
+
 `
 export const colors = {
     primary: "#FFC7C9",
