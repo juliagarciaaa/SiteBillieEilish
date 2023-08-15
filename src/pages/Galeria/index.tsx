@@ -6,43 +6,63 @@ import Sorrindo from "../../assets/sorrindo.jpg"
 import NoShow from "../../assets/no show.jpg"
 import BillieMeuAmor from "../../assets/billiemeuamor 1.png"
 import NaNeve from "../../assets/billieneve.png"
+import B12023 from "../../assets/B 1.png"
+
+
 import * as S from "./styles"
 
 export function Galeria() {
     return (
         <>
             <S.Fotos>
-                <div>
+                <aside>
+                    <div id="player">
+
+                        <div id="logo">
+                            <i id='bx bx-music'></i>
+                        </div>
+
+                        <span id="musicName"></span>
+
+                        <audio id="player" src=""></audio>
+                        <div id="controls">
+                            <button id="prevButton"><i id='bx bx-skip-previous'></i></button>
+                            <button id="playPauseButton"><i id='bx bx-caret-right'></i></button>
+                            <button id="nextButton"><i id='bx bx-skip-next'></i></button>
+                        </div>
+                    
+                        <div id="footer">
+                            <div id="progress-bar">
+                                <div id="progress"></div>
+                            </div>
+                            <div id="time">
+                                <span id="currentTime">0:00</span>
+                                <span id="duration">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <section>
                     <img src={Sorrindo} alt="Billie Eilish sorrindo" />
-                </div>
 
-                <div>
                     <img src={ComCachorro} alt="Billie Eilish com um cachorrinho" />
-                </div>
 
-                <div>
                     <img src={Sorrindo2} alt="Billie Eilish sorrindo" />
-                </div>
 
-                <div>
                     <img src={CabeloPreto2} alt="Billie Eilish de cabelo preto médio" />
-                </div>
 
-                <div>
                     <img src={NoShow} alt="Billie Eilish no show" />
-                </div>
 
-                <div>
                     <img src={Billieee1} alt="Billie Eilish sorrindo" />
 
-                </div>
-                <div>
                     <img src={BillieMeuAmor} alt="Billie Eilish loira sorrindo" />
-                </div>
 
-                <div>
                     <img src={NaNeve} alt="Billie Eilish na neve" />
-                </div>
+
+                    <img src={B12023} alt="Billie Eilish" />
+
+                </section>
+
 
             </S.Fotos>
         </>

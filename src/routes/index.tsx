@@ -7,7 +7,7 @@ export function RouteSoftware() {
         <Routes>
             <Route path="/" element={<PageLayout />}>
                 <Route path="" element={<PageHome />} />
-                <Route path="segunda" element={<PageDois />} />
+                <Route path="Galeria" element={<PageDois />} />
             </Route>
         </Routes>
     )
