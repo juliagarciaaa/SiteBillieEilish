@@ -1,34 +1,38 @@
 import "styled-components"
 import { styled } from "styled-components"
+import { colors } from "../../styles/GlobalStyle"
 
 export const Fotos=styled.section`
 
-display: grid;
-grid-template-columns:  auto auto;
 aside{
 
-    #player {
+  #player {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  max-width: 400px;
-  width: 100%;
-  height: 500px;
-  margin: 0 10px;
-  box-shadow: 0 1px 10px gray;
-  padding: 10px;
-  border-radius: 5px;
+  max-width: 600px;
+  width: 50%;
+  height: 600px;
+  margin: 0 150px;
+  box-shadow: 0 2px 9px black;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 5rem;
+  background-color: ${colors.secundary};
 }
 
 #logo {
-  background-color: #f7f7f7;
   width: 100%;
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+}
+
+img{
+  width: 25rem;
 }
 
 #logo i {
@@ -51,14 +55,14 @@ aside{
 
 #controls i {
   font-size: 60px;
-  padding: 5px;
-  border-radius: 50%;
-  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 100%;
+  background-color: ${colors.third};
   transition: all .2s;
 }
 
 #controls i:hover {
-  background-color: lightgray;
+  background-color: #000;
 }
 
 #time {
@@ -69,7 +73,7 @@ aside{
 
 #time span {
   font-size: 22px;
-  color: #333;
+  color: #000;
 }
 
 #footer {
@@ -80,7 +84,7 @@ aside{
   height: 8px;
   background-color: #ddd;
   cursor: pointer;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   border-radius: 5px;
 }
 
@@ -91,6 +95,10 @@ aside{
 }
 
 }
+
+display: grid;
+grid-template-columns:  auto auto;
+
 section{
     
     display: grid;

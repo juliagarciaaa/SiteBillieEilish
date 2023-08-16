@@ -7,6 +7,8 @@ import NoShow from "../../assets/no show.jpg"
 import BillieMeuAmor from "../../assets/billiemeuamor 1.png"
 import NaNeve from "../../assets/billieneve.png"
 import B12023 from "../../assets/B 1.png"
+import Capa from "../../assets/CapaDoAlbum.png"
+
 
 
 import * as S from "./styles"
@@ -14,12 +16,13 @@ import * as S from "./styles"
 export function Galeria() {
     return (
         <>
+    
             <S.Fotos>
                 <aside>
                     <div id="player">
 
                         <div id="logo">
-                            <i id='bx bx-music'></i>
+                           <img src={Capa} alt="" />
                         </div>
 
                         <span id="musicName"></span>
