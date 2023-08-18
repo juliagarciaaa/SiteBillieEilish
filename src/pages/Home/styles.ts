@@ -3,13 +3,13 @@ import styled from "styled-components"
 
 export const Section = styled.section`
   display: flex;
-  max-width: 1090px;
-  margin: 100px auto;
+  margin: 1rem;
   justify-content: center;
-  gap: 10rem;
+  gap: 5rem;
  
   img {
-    width: 35%;
+    width: 35rem;
+    cursor: pointer;
   }
  
   aside{
@@ -20,9 +20,9 @@ export const Section = styled.section`
 export const Titulo = styled.aside`
  img{
   display: flex;
-  padding-left: 37rem;
+  align-items: center;
   justify-content: center;
-  margin: 3rem auto;
+  margin: 1rem auto;
   padding: 0.5rem;
  }
 

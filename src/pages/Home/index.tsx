@@ -1,21 +1,40 @@
 import * as S from './styles'
-import BillieBarbie1 from "../../assets/BillieBarbie1.png"
-import BillieBarbie2 from "../../assets/BillieBarbie2 1.png"
+import BillieBarbie1 from "../../assets/billie eilish face card 1.png"
 import TituloPrincipal from "../../assets/Billie Eilish.png"
+import Modal from 'react-modal';
+import React from 'react';
 
 export function Home() {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
     <>
-    <S.Titulo>
-    <aside>
-    <img src={TituloPrincipal} alt="titulo billie eilish" />
-    </aside>
-    </S.Titulo>
+     <div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+      >
+        <button onClick={closeModal}>close</button>
+        <div>Texto que eu ainda vou fazer</div>
+      </Modal>
+    </div>
+      <S.Titulo>
+        <aside>
+          <img src={TituloPrincipal} alt="titulo billie eilish" />
+        </aside>
+      </S.Titulo>
       <S.Section>
-        <img src={BillieBarbie1} alt="foto billie eilish" />
-        <img src={BillieBarbie2} alt="foto billie eilish" />
+        <img src={BillieBarbie1} onClick={openModal} alt="foto billie eilish" />
       </S.Section>
-      </>
+    </>
   )
 }
 
