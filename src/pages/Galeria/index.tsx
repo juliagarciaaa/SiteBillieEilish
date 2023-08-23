@@ -7,7 +7,7 @@ import NoShow from "../../assets/no show.jpg"
 import BillieMeuAmor from "../../assets/billiemeuamor 1.png"
 import NaNeve from "../../assets/billieneve.png"
 import B12023 from "../../assets/B 1.png"
-import Capa from "../../assets/CapaDoAlbum.png"
+
 
 
 
@@ -16,35 +16,10 @@ import * as S from "./styles"
 export function Galeria() {
     return (
         <>
-    
+
+
             <S.Fotos>
-                <aside>
-                    <div id="player">
 
-                        <div id="logo">
-                           <img src={Capa} alt="" />
-                        </div>
-
-                        <span id="musicName"></span>
-
-                        <audio id="player" src=""></audio>
-                        <div id="controls">
-                            <button id="prevButton"><i id='bx bx-skip-previous'></i></button>
-                            <button id="playPauseButton"><i id='bx bx-caret-right'></i></button>
-                            <button id="nextButton"><i id='bx bx-skip-next'></i></button>
-                        </div>
-                    
-                        <div id="footer">
-                            <div id="progress-bar">
-                                <div id="progress"></div>
-                            </div>
-                            <div id="time">
-                                <span id="currentTime">0:00</span>
-                                <span id="duration">0:00</span>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
                 <section>
                     <img src={Sorrindo} alt="Billie Eilish sorrindo" />
 
@@ -68,6 +43,8 @@ export function Galeria() {
 
 
             </S.Fotos>
+
+
         </>
     )
 }

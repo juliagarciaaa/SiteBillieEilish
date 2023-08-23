@@ -16,24 +16,31 @@ export function Home() {
 
   return (
     <>
-     <div>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Example Modal"
-      >
-        <button onClick={closeModal}>close</button>
-        <div>Texto que eu ainda vou fazer</div>
-      </Modal>
-    </div>
+      <div className='Modal'>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Example Modal"
+        >
+          <button onClick={closeModal}>Fechar</button>
+          <div> <br>
+          </br>"What Was I Made For? " é uma música da cantora americana Billie Eilish de Barbie: The Album , trilha sonora do filme Barbie . A música foi lançada pela Atlantic Records , Darkroom e Interscope Records em 13 de julho de 2023, como o quarto single da trilha sonora. "What Was I Made For?" liderou as paradas na Austrália, Irlanda, Suíça e Reino Unido.
+            <br />
+            <br />
+            Billie Eilish Pirate Baird O'Connell é uma cantora e compositora estadunidense. Ganhou popularidade em 2016, quando lançou o single de estreia "Ocean Eyes" no SoundCloud, posteriormente lançado pelas gravadoras Darkroom e Interscope Records
+          </div>
+        </Modal>
+      </div>
+
       <S.Titulo>
-        <aside>
+        <picture>
           <img src={TituloPrincipal} alt="titulo billie eilish" />
-        </aside>
+        </picture>
       </S.Titulo>
       <S.Section>
         <img src={BillieBarbie1} onClick={openModal} alt="foto billie eilish" />
       </S.Section>
+
     </>
   )
 }
