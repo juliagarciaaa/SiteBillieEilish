@@ -1,4 +1,4 @@
-mport Loading from '../components/Loading';
+import Loading from '../components/Loading';
 import { useAuth } from '../hooks/authHook'
 import { useEffect, useState } from 'react'
 import { Navigate, Outlet } from 'react-router-dom'

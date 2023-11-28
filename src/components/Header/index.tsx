@@ -15,6 +15,12 @@ export function Header() {
           <li>
             <a href="/Galeria">Galeria</a>
           </li>
+          <li>
+            <a href="/Login">Login</a>
+          </li>
+          <li>
+            <a href="/Cadastrar">Cadastro</a>
+          </li>
         </ul>
       </S.NavBar>
     </S.Header>

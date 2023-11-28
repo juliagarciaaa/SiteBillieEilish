@@ -14,7 +14,7 @@ export const Section = styled.section`
     display: flex;
     width: 35rem;
     cursor: pointer;
-    box-shadow: 10px 15px 41px -4px rgba(97,94,97,1);
+    box-shadow: 2px 3px 20px -5px rgba(97,94,97,1);
     border-radius: 50px;
   }
 
